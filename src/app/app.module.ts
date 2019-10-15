@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AgGridModule } from 'ag-grid-angular';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,7 +32,9 @@ import { PurchaseInvoiceComponent } from './stock/purchase-invoice/purchase-invo
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([]),
+    NgSelectModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

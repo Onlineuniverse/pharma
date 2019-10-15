@@ -2,6 +2,7 @@ import {
   Component,
   OnInit
 } from '@angular/core';
+import * as $ from 'jquery'; 
 
 @Component({
   selector: 'app-purchase-order',
@@ -104,6 +105,21 @@ export class PurchaseOrderComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    $(document).ready(function () {
+				
+			$('.submit-for-approval, .submit-later').click(function (e) {
+				e.preventDefault();
+				$('.grid-area').show();
+				$('.new-purchase-order').hide();
+      }); 
+      $('.edit-btn').click(function (e) {
+				e.preventDefault();
+				$('.new-purchase-order').show();
+				$('.grid-area').hide();
+			}); 
+			
+		});
+  }
 
 }

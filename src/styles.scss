@@ -4,6 +4,7 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~ag-grid-community/dist/styles/ag-grid.css";
 @import "~ag-grid-community/dist/styles/ag-theme-balham.css";
+@import "~@ng-select/ng-select/themes/default.theme.css";
 
 /* Bootstrap Customizations */
 
@@ -29,6 +30,26 @@
   }
   .ag-row-selected {
     background-color: $light-gray;
+  }
+}
+
+/* NG Select Customization */
+
+.ng-select {
+  .ng-select-container {
+    background-color: $input-bg;
+    border: 1px solid $primary;
+    
+  }
+  .ng-dropdown-panel {
+    border: 1px solid $primary;
+  }
+  &.ng-select-opened {
+      box-shadow: 0 0 0 0.2rem rgba(16, 132, 126, 0.25);
+    >.ng-select-container {
+      
+      border-color: #2ee6dc;
+    }
   }
 }
 
