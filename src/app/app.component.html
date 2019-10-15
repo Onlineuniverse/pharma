@@ -1,0 +1,96 @@
+<div class="container-fluid">
+  <header class="row">
+    <div class="col logo-wrap px-5 bg-white d-flex align-items-center">
+      <img src="../assets/images/Docpharm.png" class="img-fluid m-auto" alt="">
+    </div>
+    <div class="col-lg p-0">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-secondary text-white py-2 py-lg-0">
+        <span class="navbar-brand d-lg-none" href="#">Account Options</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-options"
+          aria-controls="top-options" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="top-options">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link mr-2 mr-lg-0" href="#">
+                <img src="../assets/images/user.ico" class="rounded-circle small-thumb" alt="">
+              </a>
+              <span>Ram Bollu</span>
+            </li>
+            <li class="nav-item px-0 px-lg-3">
+              <a class="nav-link pt-1" href="#">
+                <fa-icon [icon]="faCog" class="font-15px text-white"></fa-icon>
+              </a>
+            </li>
+            <li class="nav-item">
+              <div class="btn-group mt-1">
+                <button type="button" class="btn btn-link px-0 px-lg-2" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <fa-icon [icon]="faBell" class="text-white"></fa-icon><span class="badge badge-danger">9</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <button class="dropdown-item" type="button">Action</button>
+                  <button class="dropdown-item" type="button">Another action</button>
+                  <button class="dropdown-item" type="button">Another action</button>
+                  <button class="dropdown-item" type="button" disabled>Another action</button>
+                  <button class="dropdown-item" type="button" disabled>Something else here</button>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item d-flex align-items-center border-left-lg">
+              <a class="nav-link mr-2 mr-lg-0" href="#">
+                <img src="../assets/images/pharma.ico" class="rounded-circle small-thumb bg-white" alt="">
+              </a>
+              <span>IHealth Pharm</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-2 py-lg-0 px-lg-0">
+        <span class="navbar-brand d-lg-none" href="#">Main Menu</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-menu"
+          aria-controls="top-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="top-menu">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item px-3">
+              <a class="nav-link">
+                <fa-icon [icon]="faHome" class="mr-2"></fa-icon>Home
+              </a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link"  (click)="navigateToStock()">
+                <fa-icon [icon]="faLayerGroup" class="mr-2"></fa-icon>Stock
+              </a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link">
+                <fa-icon [icon]="faFileInvoiceDollar" class="mr-2"></fa-icon>Sales
+              </a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link">
+                <fa-icon [icon]="faWallet" class="mr-2"></fa-icon>Finance
+              </a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link">
+                <fa-icon [icon]="faUsers" class="mr-2"></fa-icon>CRM
+              </a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link">
+                <fa-icon [icon]="faClipboard" class="mr-2"></fa-icon>Reports
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="row justify-content-center">
+    <router-outlet></router-outlet>
+  </div>
+</div>

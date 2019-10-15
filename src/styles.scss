@@ -1,0 +1,186 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+@import "~ag-grid-community/dist/styles/ag-grid.css";
+@import "~ag-grid-community/dist/styles/ag-theme-balham.css";
+
+/* Bootstrap Customizations */
+
+.btn {
+  .badge {
+    position: relative;
+    top: -6px;
+    left: -4px;
+    border-radius: 50%;
+    font-size: 11px;
+  }
+}
+.custom-control-label::before {
+    border-color: $primary;
+}
+
+/* AG Grid Customization */
+
+.ag-theme-balham {
+  .ag-header {
+    color: $primary;
+    background-color: #d6ffff;
+  }
+  .ag-row-selected {
+    background-color: $light-gray;
+  }
+}
+
+/* Layout & re-usable styles */
+
+html,
+body,
+.container-fluid,
+.container-fluid>.row:not(header) {
+  height: calc(100vh - 68.4px);
+}
+
+body {
+  &.login-screen {
+    background: url('assets/images/pharm.jpg') 0 0 no-repeat;
+    background-size: cover;
+
+    header {
+      display: none;
+    }
+
+  }
+
+}
+
+app-stock {
+  width: 100%;
+
+  @media (min-width: 992px) {
+    display: flex;
+    flex-basis: 100%;
+  }
+}
+
+.transition {
+  transition: all .5s;
+}
+
+#top-options {
+
+  .nav-link,
+  .btn {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+}
+
+#top-menu {
+  .nav-item {
+    @extend .transition;
+
+    &.active,
+    &:hover {
+      background: $light;
+      @extend .transition;
+    }
+
+    .nav-link {
+      padding: 0.4rem .5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.logo-wrap,
+.left-menu {
+  flex-basis: 100%;
+
+  @media (min-width: 992px) {
+    max-width: 250px;
+    min-width: 250px;
+  }
+}
+
+.logo-wrap {
+  @media (max-width: 991px) {
+    img {
+      max-width: 175px;
+    }
+  }
+}
+
+.left-menu {
+  .card {
+    .btn {
+      border-radius: 0;
+      font-size: 15px;
+      position: relative;
+      background-color: rgba($primary, .25);
+      &.active {
+        background: $primary;
+      }
+      &.down-arrow {
+        &:after {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          position: absolute;
+          right: 19px;
+          top: 9px;
+          content: "\f078";
+          @extend .transition;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+
+      &.collapsed {
+        &:after {
+          transform: rotate(-180deg);
+          @extend .transition;
+        }
+      }
+    }
+
+    ul {
+      li {
+        @extend .transition;
+
+        &.active,
+        &:hover {
+          background: $primary;
+          @extend .transition;
+        }
+
+        a {
+          padding: 8px 10px 8px 35px;
+          font-size: 15px;
+          color: $white;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.bg-extra-light {
+  background: #5bebe41f;
+}
+
+.small-thumb {
+  max-width: 22px;
+  height: auto;
+}
+
+.top-nav,
+.font-15px {
+  font-size: 15px;
+}

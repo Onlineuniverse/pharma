@@ -1,0 +1,64 @@
+<div class="col left-menu p-0 border-right-lg bg-light">
+  <div class="accordion" id="left-accordion-menu">
+    <div class="card bg-light">
+      <div class="card-header p-0" id="menu-item">
+        <h2 class="mb-0 border-bottom border-white">
+          <button class="btn btn-link btn-block text-left py-2 px-3 text-white down-arrow" type="button" data-toggle="collapse"
+            data-target="#left-accordion-menu-1" aria-expanded="false" aria-controls="left-accordion-menu-1">
+            <fa-icon [icon]="faFileInvoiceDollar" class="mr-2"></fa-icon>Quotations
+          </button>
+        </h2>
+      </div>
+      <div id="left-accordion-menu-1" class="collapse" aria-labelledby="menu-item"
+        data-parent="#left-accordion-menu">
+        <div class="card-body p-0 border-bottom border-white">
+          <ul class="p-0 m-0">
+            <li><a href="" class="d-block"
+                [routerLink]="['/stock/requestnewquotations']">
+                <fa-icon [icon]="faFileInvoiceDollar" class="mr-2"></fa-icon>Request New Quotation
+              </a></li>
+            <li><a href="" class="d-block"
+                [routerLink]="['/stock/pendingrequestquotations']">
+                <fa-icon [icon]="faFileInvoiceDollar" class="mr-2"></fa-icon>Pending Request Quotation
+              </a></li>
+            <li><a href="" class="d-block"
+                [routerLink]="['/stock/outstandingquotations']">
+                <fa-icon [icon]="faFileInvoiceDollar" class="mr-2"></fa-icon>Outstanding Quotations
+              </a></li>
+            <li><a href="" class="d-block"
+                [routerLink]="['/stock/distributorquotations']">
+                <fa-icon [icon]="faFileInvoiceDollar" class="mr-2"></fa-icon>Distributor Quotations
+              </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-header p-0" id="menu-item-2">
+        <h2 class="mb-0 border-bottom border-white" (click)="navigateToPurchase('purchaseorder')">
+          <button class="btn btn-link btn-block text-left py-2 px-3 text-white no-childern" type="button" data-toggle="collapse"
+            data-target="#left-accordion-menu-2" aria-expanded="true" aria-controls="left-accordion-menu-2">
+            <fa-icon [icon]="faFileInvoiceDollar" class="mr-2"></fa-icon>Purchase Order
+          </button>
+        </h2>
+      </div>
+      <div class="card-header p-0" id="menu-item-3">
+        <h2 class="mb-0 border-bottom border-white" (click)="navigateToPurchaseOrderInvoice('purchaseorderinvoice')">
+          <button class="btn btn-link btn-block text-left py-2 px-3 text-white no-childern" type="button" data-toggle="collapse"
+            data-target="#left-accordion-menu-3" aria-expanded="true" aria-controls="left-accordion-menu-3">
+            <fa-icon [icon]="faFileInvoiceDollar" class="mr-2"></fa-icon>Purchase Invoice
+          </button>
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg right-content bg-extra-light p-0">
+  <div class="p-4">
+    <router-outlet></router-outlet>
+    <!-- <app-request-new-quotation></app-request-new-quotation> -->
+    <!-- <app-pending-request-quotation></app-pending-request-quotation> -->
+    <!-- <app-outstanding-quotations></app-outstanding-quotations> -->
+    <!-- <app-distributor-quotations></app-distributor-quotations> -->
+    <!-- <app-purchase-order></app-purchase-order> -->
+    <!-- <app-purchase-invoice></app-purchase-invoice> -->
+  </div>
+</div>

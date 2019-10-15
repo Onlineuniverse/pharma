@@ -1,0 +1,381 @@
+<ul class="nav nav-pills mb-3 border-bottom border-secondary" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="" data-toggle="pill" href="#pills-new" role="tab" aria-controls="pills-home"
+      aria-selected="true">New Purchase Order</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="" data-toggle="pill" href="#pills-pending" role="tab" aria-controls="pills-home"
+      aria-selected="true">Pending Purchase Orders</a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+
+  <div class="tab-pane fade show active" id="pills-new" role="tabpanel" aria-labelledby="pills-home-tab">
+
+    <form class="">
+      <h6 class="border border-primary p-2 mt-3 mb-4 bg-light text-white">New Purchase Order</h6>
+
+      <div class="form-group row">
+        <div class="col-12 pb-2">
+          <div class="custom-control d-inline custom-radio mr-3">
+            <input name="type" type="radio" class="custom-control-input" id="medical">
+            <label class="custom-control-label" for="medical">Medical</label>
+          </div>
+          <div class="custom-control d-inline custom-radio mr-3">
+            <input name="type" type="radio" class="custom-control-input" id="non medical">
+            <label class="custom-control-label" for="non medical">Non Medical</label>
+          </div>
+          <div class="custom-control d-inline custom-checkbox mr-3">
+            <input name="check" type="checkbox" class="custom-control-input" id="emergency">
+            <label class="custom-control-label" for="emergency">Emergency</label>
+          </div>
+          <div class="custom-control d-inline custom-checkbox">
+            <input name="check" type="checkbox" class="custom-control-input" id="cash">
+            <label class="custom-control-label" for="cash">Cash</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Number <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="" placeholder="PO Number">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Date <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <input type="date" class="form-control" id="" placeholder="PO Date">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Del. Time <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Delivery Time">
+                <div class="input-group-append">
+                  <span class="input-group-text bg-extra-light border-0">Days</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Del. Type <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <select class="form-control">
+                <option value="" disabled selected>-- Select --</option>
+                <option>Item</option>
+                <option>Item</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Qtn. No. <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <select class="form-control">
+                <option value="" disabled selected>-- Select --</option>
+                <option>Item</option>
+                <option>Item</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Qtn. Date <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <input type="date" class="form-control" id="" placeholder="Quotation Date">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Sh. Address <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <textarea class="form-control min-height-83" id="" placeholder="Shipping Address"></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Payment <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Net Payment">
+                <div class="input-group-append">
+                  <span class="input-group-text bg-extra-light border-0">Days</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h6 class="border border-primary p-2 mt-3 mb-4 bg-light text-white">Distributor Details</h6>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Distributor <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <select class="form-control">
+                <option value="" disabled selected>-- Select --</option>
+                <option>Item</option>
+                <option>Item</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">DL No. <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="" placeholder="DL Number">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="form-group row">
+            <div class="col-12">
+              <input type="text" class="form-control" id="" placeholder="">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Address <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="" placeholder="Address">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h6 class="border border-primary p-2 mt-3 mb-4 bg-light text-white">Select Items</h6>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Code <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="" placeholder="Item Code" data-toggle="modal"
+                data-target="#itemSearchModal">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Description <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="" placeholder="Item Description" data-toggle="modal"
+                data-target="#itemSearchModal">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Quantity <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9 ">
+              <input type="text" class="form-control" id="" placeholder="Quantity">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col text-center pb-4">
+          <button class="btn btn-primary">Add to the Grid</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 pb-4">
+          <ag-grid-angular style="width: 100%; height: 200px;" class="ag-theme-balham" [rowData]="rowData"
+            [columnDefs]="columnDefs">
+          </ag-grid-angular>
+        </div>
+      </div>
+
+      <h6 class="border border-primary p-2 mt-3 mb-4 bg-light text-white">Total Charges</h6>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Items <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="" placeholder="Total Items">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Qty <span class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <input type="date" class="form-control" id="" placeholder="Total Quantity">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Amount <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="" placeholder="Total Amount">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Advance <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="" placeholder="Advance">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Balance <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <input type="date" class="form-control" id="" placeholder="Balance">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Charges <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="" placeholder="Service Charges">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Disc. % <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="" placeholder="Discount %">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">Dic. Amt. <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <input type="date" class="form-control" id="" placeholder="Discount Amount">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="" class="col-sm-3 col-form-label pr-0 text-right">PO Value <span
+                class="text-danger">*</span></label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="" placeholder="PO Value">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group row">
+            <label for="" class="col-12 col-form-label pr-0 text-center">Terms <span
+                class="text-danger">*</span></label>
+            <div class="col-12">
+              <textarea class="form-control min-height-83" id="" placeholder="Pharmacy terms"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group row">
+            <label for="" class="col-12 col-form-label pr-0 text-center">Remarks <span
+                class="text-danger">*</span></label>
+            <div class="col-12">
+              <textarea class="form-control min-height-83" id="" placeholder="Remarks"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </form>
+
+    <div class="row">
+      <div class="col mb-3 pt-2 text-center">
+        <button class="btn btn-primary px-4">Submit for Approval</button>
+        <button class="btn btn-secondary px-4 ml-3">Submit Later</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="tab-pane fade show active" id="pills-pending" role="tabpanel" aria-labelledby="pills-home-tab">
+
+      <div class="row">
+          <div class="col">
+            <form class="form-inline">
+              <input class="form-control no-right-border-radius" type="text" placeholder="Search here.."
+                aria-label="Search">
+              <button class="btn btn-primary no-left-border-radius">Search</button>
+            </form>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="col py-3">
+            <ag-grid-angular style="width: 100%; height: 200px;" class="ag-theme-balham" [rowData]="rowData"
+              [columnDefs]="columnDefs">
+            </ag-grid-angular>
+          </div>
+        </div>
+  
+  </div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="itemSearchModal" tabindex="-1" role="dialog" aria-labelledby="itemSearchModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+
+        <div class="form-group row">
+          <label for="" class="col-sm-2 col-form-label pr-0 text-right">Search Using <span
+              class="text-danger">*</span></label>
+          <div class="col-sm-3">
+            <select class="form-control">
+              <option value="" disabled selected>-- Select --</option>
+              <option>Item Code</option>
+              <option>Item Desc</option>
+            </select>
+          </div>
+          <label for="" class="col-sm-2 col-form-label pr-0 text-right">Search For Item <span
+              class="text-danger">*</span></label>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" id="" placeholder="Quotation Number">
+          </div>
+          <div class="col-sm-2">
+            <button type="button" class="btn btn-primary btn-block">Search</button>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-sm-12">
+            <ag-grid-angular style="width: 100%; height: 200px;" class="ag-theme-balham" [rowData]="rowData"
+              [columnDefs]="columnDefs">
+            </ag-grid-angular>
+          </div>
+
+          <div class="col-sm-12 text-center pt-3">
+            <button type="button" class="btn btn-primary px-4 mr-2">OK</button>
+            <button type="button" class="btn btn-secondary px-4" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
